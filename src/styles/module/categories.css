@@ -1,0 +1,177 @@
+.c-list__categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.c-category__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--black-10);
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    height: 280px;
+}
+
+.c-category__itemContent {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border: 2px solid var(--orange-50);
+}
+
+.c-category__itemData {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+}
+
+.c-category__itemImage {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.c-category__bgOverImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(0, 0, 0, 0.85)));
+    background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.85) 50%);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.85) 50%);
+}
+
+.c-category__itemInfo {
+    position: absolute;
+    z-index: 2;
+    left: 0.5rem;
+    bottom: 0.5rem;
+}
+
+.c-category__itemDataContent {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.c-category__itemData {
+    background-color: var(--orange-50);
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.c-category__itemData--icon {
+    font-size: 2rem;
+}
+
+.c-itemInfo__categorySubName {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.c-itemInfo__userPosts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.9275rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.c-userPost__post {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--orange-50);
+    font-weight: 700;
+}
+
+.c-itemInfo__userPosts,
+.c-itemInfo__userPosts:hover {
+    color: var(--white);
+}
+
+.c-itemInfo__categoryName {
+    font-family: Volkhov;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.c-itemInfo__categoryName a:hover,
+.c-itemInfo__categoryName a {
+    color: var(--white);
+}
+
+@media (min-width: 1000px) {
+    .c-category__item {
+        width: 48%;
+        max-width: 500px;
+        height: 300px;
+    }
+    .c-category__itemData {
+        background-color: var(--black-10);
+    }
+    .c-category__itemContent:hover .c-category__itemData {
+        background-color: var(--orange-50);
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+    .c-category__itemContent:hover .c-category__itemImage {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+}

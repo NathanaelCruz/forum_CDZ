@@ -1,0 +1,17 @@
+.c-statistics__forumItem {
+    width: 48%;
+}
+
+.c-forum__numbers {
+    margin-right: 0.6rem;
+}
+
+@media (min-width: 767px) {
+    .c-statistics__forumItem {
+        width: 100%;
+        min-height: 100px;
+    }
+    .c-statistics__forumItem__content {
+        height: 100%;
+    }
+}

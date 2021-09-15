@@ -1,0 +1,192 @@
+.c-section__lastPosts>i,
+.c-section__lastPosts>i.u-rotate-45,
+.l-extraInfo__newUsers.is_open,
+.l-mainContent__lastPosts.is_extends,
+.l-tablon__mainContent.is_visible,
+.l-tablon__staff.is_visible,
+.l-tablon__extraInfos.is_visible,
+.c-menu__mobile.is__openMenu:after,
+.c-menu__mobile.is__openMenu:before,
+.l-menu__nav.is__openMenu,
+.c-btn__closeNewUser>i,
+.c-btn__closeNewUser>i.u-rotate-45 {
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-menu.is_extendHeader {
+    height: 100vh;
+    width: 100%;
+}
+
+.l-menu__nav.is__openMenu {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.l-nav__listItem.u-is__ListItemActive:after,
+.l-nav__listItem.u-is__ListItemActive:before,
+.c-menu__button:before {
+    content: '';
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+}
+
+.l-nav__listLink:active,
+.l-nav__listLink:focus {
+    background-color: var(--orange-50);
+    padding: 0.5rem 0.25rem;
+}
+
+.l-nav__listLink:hover {
+    color: var(--white);
+}
+
+.l-nav__listItem.u-is__ListItemActive {
+    z-index: 2;
+    position: relative;
+}
+
+.l-nav__listItem.u-is__ListItemActive:before {
+    background-color: var(--orange-50);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 1rem;
+    height: 1rem;
+    left: 0.5rem;
+    top: calc(50% - 0.5rem);
+}
+
+.l-nav__listItem.u-is__ListItemActive:after {
+    border: 1px solid var(--orange-50);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 2rem;
+    height: 2rem;
+    left: 0;
+    top: calc(50% - 1rem);
+}
+
+.l-nav__listItem.u-is__ListItemActive {
+    margin-bottom: 3rem;
+}
+
+.c-menu__mobile.is__openMenu {
+    left: calc(100% - 4.5rem);
+    top: 0.5rem;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-menu__mobile.is__openMenu:after,
+.c-menu__mobile.is__openMenu:before {
+    background-color: var(--white);
+    width: 2rem;
+}
+
+.c-menu__mobile.is__openMenu:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.c-menu__mobile.is__openMenu:before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.l-btn__tablon.is_selected {
+    position: relative;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.l-btn__tablon.is_selected:before {
+    left: -2.5rem;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.l-btn__tablon.is_selected:hover:before {
+    left: -1.5rem;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.l-tablon__mainContent.is_visible,
+.l-tablon__staff.is_visible,
+.l-tablon__extraInfos.is_visible {
+    visibility: visible;
+    height: 100%;
+    opacity: 1;
+}
+
+.l-mainContent__lastPosts.is_extends {
+    height: 500px;
+}
+
+.c-section__lastPosts>i.u-rotate-45,
+.c-btn__closeNewUser>i.u-rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.l-extraInfo__newUsers.is_open {
+    height: 830px;
+}
+
+.c-modal.is__open {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+    .c-menu__mobile.is__openMenu {
+        display: none;
+    }
+    .l-menu__nav.is__openMenu {
+        height: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    .l-nav__listLink:active,
+    .l-nav__listLink:focus {
+        background-color: transparent;
+        padding: 0;
+    }
+    .l-nav__listItem.u-is__ListItemActive:before {
+        width: 3rem;
+        height: 3rem;
+        left: calc(50% - 1.5rem);
+        top: calc(50% - 1.5rem);
+    }
+    .l-nav__listItem.u-is__ListItemActive:after {
+        width: 4rem;
+        height: 4rem;
+        left: calc(50% - 2rem);
+        top: calc(50% - 2rem);
+    }
+    .l-mainContent__lastPosts.is_extends,
+    .l-extraInfo__newUsers.is_open {
+        height: 100%;
+    }
+}

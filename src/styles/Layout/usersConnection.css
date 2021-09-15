@@ -1,0 +1,91 @@
+.l-usersconnection__old,
+.l-usersconnection {
+    background-color: var(--black-10);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.l-usersconnection__OldList,
+.l-usersconnection__list {
+    list-style: none;
+    padding: 0.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.l-usersconnection__title {
+    background-color: #111;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: var(--white);
+    padding: 1rem 0.5rem;
+}
+
+.l-usersconnection__title>i {
+    margin-right: 1rem;
+}
+
+@media (min-width: 767px) {
+    .l-usersconnection__old {
+        grid-area: logOld;
+    }
+    .l-usersconnection {
+        grid-area: logRecently;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .l-usersconnection,
+    .l-usersconnection__old {
+        background-color: #0f0d0d;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 1000px) {
+    .l-usersconnection,
+    .l-usersconnection__old {
+        max-width: 95%;
+    }
+    .l-usersconnection {
+        min-height: 275px;
+        max-height: 95%;
+        margin-bottom: auto;
+        margin-top: 1rem;
+    }
+    .l-usersconnection__old {
+        max-height: 260px;
+        max-width: calc(100% - 1rem);
+        margin: 0 auto 1rem auto;
+    }
+}

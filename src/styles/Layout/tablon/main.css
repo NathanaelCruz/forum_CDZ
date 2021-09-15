@@ -1,0 +1,404 @@
+@-webkit-keyframes scrollLastPosts {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -215%;
+    }
+}
+
+@keyframes scrollLastPosts {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -215%;
+    }
+}
+
+.l-tablon__mainContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-template-areas: "lastPost miniMenu miniMenu miniMenu" "lastPost postUpdate tramaGlobal tramaGlobal";
+    -ms-grid-columns: 260px 0.6rem 1fr 0.6rem 1fr 0.6rem 1fr;
+    grid-template-columns: 260px repeat(3, 1fr);
+    -ms-grid-rows: 1fr 0.6rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.6rem;
+}
+
+.l-mainContent__lastPosts {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: lastPost;
+    background-color: var(--black-20);
+    height: 60px;
+    overflow: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-lastPosts__content {
+    overflow: hidden;
+    height: 85%;
+    position: relative;
+    min-height: 400px;
+}
+
+.l-lastPosts__listItem {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: "post post post post" "icon postagem postagem postagem";
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--black-10);
+}
+
+.l-lastPosts__content:hover .l-lastPosts__list {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.l-lastPosts__list {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    -webkit-animation: scrollLastPosts 27s ease-in-out infinite;
+    animation: scrollLastPosts 27s ease-in-out infinite;
+}
+
+.l-listItem__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: post;
+    text-align: center;
+}
+
+.l-listItem__title a {
+    color: var(--orange-50);
+    font-size: 1.2rem;
+}
+
+.l-listItem__userPost {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: postagem;
+    font-size: 1rem;
+}
+
+.l-mainContent__miniMenu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
+    grid-area: miniMenu;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.l-miniMenu__item {
+    height: 100%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.l-miniMenu__item.u-flex__end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.l-miniMenu__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.l-miniMenu__contentImage {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--black-20);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-miniMenu__contentImage i {
+    font-size: 2rem;
+    color: var(--white);
+    z-index: 2;
+}
+
+.l-miniMenu__image {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    z-index: -1;
+    width: 120%;
+    mix-blend-mode: multiply;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-miniMenu__text {
+    font-size: 0.8rem;
+    color: var(--white);
+    text-align: center;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
+
+.l-miniMenu__rules {
+    background-color: var(--orange-50);
+}
+
+.l-miniMenu__standards {
+    background-color: var(--gold);
+}
+
+.l-miniMenu__plot {
+    background-color: var(--purple);
+}
+
+.l-miniMenu__begin {
+    background-color: var(--green);
+}
+
+.l-mainContent__updateNotify {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    background-color: var(--black-20);
+    grid-area: postUpdate;
+    height: 100%;
+}
+
+.l-updateNotify__content {
+    overflow: auto;
+    max-height: 12rem;
+}
+
+.l-mainContent__globalPlot {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    background-image: url('../../../assets/images/globalPlot.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-area: tramaGlobal;
+    color: var(--white);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    text-align: right;
+    height: 100%;
+    min-height: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.l-mainContent__globalPlot:hover {
+    color: var(--white);
+    background-size: 120% 120%;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.l-mainContent__globalPlot:hover .l-globalPlot__title,
+.l-globalPlot__title {
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-mainContent__globalPlot:hover .l-globalPlot__title {
+    margin-right: 10px;
+}
+
+.l-globalPlot__title {
+    padding: 0.5rem;
+}
+
+.l-globalPlot__title.u-heading__second {
+    background-color: var(--orange-50);
+    width: 90%;
+}
+
+.l-globalPlot__title.u-heading__third {
+    background-color: var(--black-10);
+    color: var(--orange-50);
+    width: 90%;
+}
+
+@media (min-width: 767px) {
+    .l-tablon__mainContent {
+        display: -ms-grid;
+        display: grid;
+    }
+    .l-mainContent__lastPosts {
+        height: 100%;
+    }
+    .l-miniMenu__item {
+        height: 50%;
+    }
+    .l-miniMenu__contentImage i {
+        color: var(--orange-50);
+    }
+    .l-miniMenu__contentImage {
+        background-color: var(--black-20);
+    }
+    .l-miniMenu__rules:hover {
+        background-color: var(--orange-50);
+    }
+    .l-miniMenu__standards:hover {
+        background-color: var(--gold);
+    }
+    .l-miniMenu__plot:hover {
+        background-color: var(--purple);
+    }
+    .l-miniMenu__begin:hover {
+        background-color: var(--green);
+    }
+}
+
+@media (min-width: 1000px) {
+    .l-miniMenu__item {
+        width: 25%;
+        height: 100%;
+    }
+    .l-miniMenu__link {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .l-miniMenu__contentImage {
+        width: 5rem;
+        height: 5rem;
+    }
+    .l-miniMenu__contentImage {
+        -webkit-transform: rotate( 45deg);
+        -ms-transform: rotate( 45deg);
+        transform: rotate( 45deg);
+    }
+    .l-miniMenu__contentImage i,
+    .l-miniMenu__image {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .l-miniMenu__text {
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+    }
+    .l-miniMenu__contentImage:hover>i {
+        color: var(--white);
+    }
+    .l-miniMenu__contentImage:hover {
+        -webkit-transform: scale(1.1) rotate(45deg);
+        -ms-transform: scale(1.1) rotate(45deg);
+        transform: scale(1.1) rotate(45deg);
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 1300px) {
+    .l-globalPlot__title.u-heading__second {
+        width: 70%;
+    }
+    .l-globalPlot__title.u-heading__third {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .l-miniMenu__text {
+        font-size: 1.3rem;
+    }
+}

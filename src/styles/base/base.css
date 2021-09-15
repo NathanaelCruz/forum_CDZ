@@ -1,0 +1,70 @@
+:root {
+    --white: #FAFAFA;
+    --black-10: #1F1F1F;
+    --black-20: #383838;
+    --black-30: #525252;
+    --black-40: #6B6B6B;
+    --black-50: #858585;
+    --black-60: #B8B8B8;
+    --orange-50: #E16E23;
+    --orange-60: #E78C50;
+    --gold: #fbc531;
+    --purple: #8c7ae6;
+    --green: #44bd32;
+    --blue-10: #1B1A23;
+    --blue-15: #262532;
+    --blue-20: #313041;
+    --blue-25: #3C3A4F;
+    --blue-30: #434158;
+    --blue-50: #6F6C93;
+}
+
+body {
+    background-image: url('../../assets/images/background.jpg');
+    color: var(--white);
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--black-20);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--orange-50);
+}
+
+body,
+html,
+input,
+textarea,
+button {
+    font-family: Quicksand;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: Volkhov;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.btn:active,
+.btn:focus {
+    -webkit-box-shadow: 0 0 0 0.25rem #e78c5040;
+    box-shadow: 0 0 0 0.25rem #e78c5040;
+}

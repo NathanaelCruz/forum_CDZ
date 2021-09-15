@@ -1,0 +1,118 @@
+.l-userInfo {
+    background-color: var(--black-10);
+    height: 12rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.l-userInfo__avatar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1rem solid var(--black-30);
+    outline: 1rem solid var(--black-10);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.l-userInfo__avatarImage {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -webkit-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: 0.9s ease-in-out;
+    -o-transition: 0.9s ease-in-out;
+    transition: 0.9s ease-in-out;
+    border: 0.5rem solid var(--black-10);
+}
+
+.l-userInfo:hover .l-userInfo__avatarImage {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.9s ease-in-out;
+    -o-transition: 0.9s ease-in-out;
+    transition: 0.9s ease-in-out;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.l-userInfo__avatarBorder {
+    position: absolute;
+    z-index: -1;
+    width: 15rem;
+    height: 15rem;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 0.5rem solid var(--orange-50);
+}
+
+.l-userInfo__saluteAndName {
+    margin-left: 1rem;
+    z-index: 11;
+}
+
+.l-userInfo__salute {
+    color: var(--white);
+    font-family: Volkhov;
+    font-size: 2rem;
+}
+
+.l-userInfo__name {
+    word-break: break-word;
+    font-size: 1.2rem;
+}
+
+.l-userInfo__phrase {
+    display: none;
+    margin-left: auto;
+    max-width: 22rem;
+}
+
+@media (min-width: 380px) {
+    .l-userInfo__salute {
+        font-size: 3rem;
+    }
+    .l-userInfo__name {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .l-userInfo__salute {
+        color: var(--orange-50);
+    }
+    .l-userInfo__avatarImage {
+        width: 10rem;
+        height: 10rem;
+    }
+    .l-userInfo__saluteAndName {
+        margin-left: 6rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .l-userInfo__phrase {
+        display: block;
+    }
+}

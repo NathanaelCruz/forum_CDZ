@@ -1,0 +1,14 @@
+.c-userconnection__oldInfo,
+.c-userconnection__info {
+    margin-right: 0.5rem;
+}
+
+.c-userconnection__first {
+    margin: 1rem 1rem 1rem 0.5rem;
+}
+
+.c-userconnection__first>i {
+    padding: 1rem 1.4rem;
+    background-color: #111;
+    color: var(--orange-50)
+}

@@ -1,0 +1,212 @@
+.l-footer {
+    background-color: var(--black-20);
+}
+
+.l-footer__header {
+    background-color: var(--black-10);
+}
+
+.l-footer__loginForm,
+.l-footer__loginForm>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.l-footer__loginForm>div {
+    padding: 0.3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.l-footer__loginForm>div label {
+    margin-right: 1rem;
+    text-align: left;
+}
+
+.l-footer__loginForm {
+    padding: 0.7rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.l-footer__announcement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.l-footer__formButton {
+    background-color: var(--orange-50);
+    color: var(--white);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-footer__navigateList,
+.l-footer__navigateList--menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.l-footer__navigateList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.l-footer__navigateList--menus {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.l-footer__navigateItem.main {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.l-footer__navigateItem {
+    width: 48%;
+    background-color: var(--black-10);
+}
+
+.l-footer__navigateLink {
+    color: var(--white);
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-footer__navigateLink:hover {
+    color: var(--orange-50);
+    border-left: 10px solid var(--orange-50);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.l-footer__copy {
+    background-color: #111;
+    padding: 0.8rem 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.l-footer__copyContent {
+    margin: 0;
+}
+
+.l-footer__developer,
+.l-footer__developer:hover {
+    color: var(--orange-50);
+}
+
+@media (min-width: 767px) {
+    .l-footer__loginForm>div input {
+        width: 75%;
+    }
+    .l-footer__formButton {
+        background-color: #111;
+    }
+    .l-footer__formButton:hover {
+        background-color: var(--orange-50);
+        color: var(--white);
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 801px) {
+    .l-footer__navigate {
+        background-color: var(--black-10);
+        padding: 0.5rem;
+    }
+    .l-footer__navigateItem,
+    .l-footer__navigateItem.main {
+        width: auto;
+        background-color: transparent;
+        margin: 0;
+    }
+    .l-footer__navigateLink {
+        font-size: 0.9rem;
+    }
+    .l-footer__navigateList {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .l-footer__navigateLink {
+        padding: 0.4rem;
+    }
+    .l-footer__copy {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .l-footer__loginForm,
+    .l-footer__loginForm>div {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .l-footer__navigateLink:hover {
+        border-left: none;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+}

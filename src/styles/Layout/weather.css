@@ -1,0 +1,117 @@
+.l-weather {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.l-weather__icons {
+    min-height: 4rem;
+    width: 100%;
+    padding: 0.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 0;
+    position: relative;
+}
+
+.l-weather__icons i {
+    position: absolute;
+}
+
+.l-weather__main {
+    font-size: 4.5rem;
+    top: -1rem;
+    left: 40%;
+}
+
+.l-weather__cloudIcon.u-icon__sun {
+    left: calc(46% - 3rem);
+}
+
+.l-weather__cloudIcon.u-icon__moon {
+    left: calc(30% + 1rem);
+}
+
+.l-weather__cloudIcon {
+    font-size: 2.4rem;
+    color: var(--orange-50);
+    top: 0.4rem;
+    z-index: 4;
+}
+
+.l-weather__background {
+    background-color: var(--black-10);
+    height: 80%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: inherit;
+    bottom: 0;
+}
+
+.l-weather__salution {
+    margin-bottom: 0;
+    margin-left: 0.4rem;
+}
+
+.l-weather__condition {
+    margin-bottom: 0;
+}
+
+.l-weather__info {
+    margin-left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 767px) {
+    .l-weather__icons {
+        width: 6rem;
+        margin-left: 3rem;
+    }
+    .l-weather {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    .l-weather__background {
+        top: calc(10% - 0.2rem);
+        bottom: inherit;
+    }
+    .l-weather__main {
+        left: inherit;
+    }
+    .l-weather__cloudIcon.u-icon__sun {
+        left: 3rem;
+    }
+    .l-weather__cloudIcon.u-icon__moon {
+        left: -1rem;
+    }
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Seiya - Fórum</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Volkhov:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
+    <script src="//pull.cappuccicons.com/cpf.js"></script>
+
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="col-md-1 offset-md-1 l-menu">
+
+        <button class="btn c-menu__mobile" type="button">
+                <i class="cp cp-minus"></i>
+                <div class="c-menu__mobileIcon" role="img" aria-label="Imagem de um losangulo laranja"></div>
+            </button>
+
+        <nav class="l-menu__nav px-3 py-5">
+            <ul class="l-nav__list p-0">
+                <li class="l-nav__listItem u-is__ListItemActive">
+                    <a href="#" class="l-nav__listLink fs-3">
+                        <i class="cp cp-home"></i>
+                        <p class="l-nav__linkText fs-6 mb-0 ms-md-0 ms-sm-2 ms-2">Home</p>
+                    </a>
+                </li>
+                <li class="l-nav__listItem">
+                    <a href="#" class="l-nav__listLink fs-3">
+                        <i class="cp cp-contacts"></i>
+                        <p class="l-nav__linkText fs-6 mb-0 ms-md-0 ms-sm-2 ms-2">Membros</p>
+                    </a>
+                </li>
+                <li class="l-nav__listItem">
+                    <a href="#" class="l-nav__listLink fs-3">
+                        <i class="cp cp-group"></i>
+                        <p class="l-nav__linkText fs-6 mb-0 ms-md-0 ms-sm-2 ms-2">Grupos</p>
+                    </a>
+                </li>
+                <li class="l-nav__listItem">
+                    <a href="#" class="l-nav__listLink fs-3">
+                        <i class="cp cp-add"></i>
+                        <p class="l-nav__linkText fs-6 mb-0 ms-md-0 ms-sm-2 ms-2">Registrar</p>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn c-menu__button c-modal__gods" type="button">
+                <i class="cp cp-crown fs-1"></i>
+                <span class="c-menu__buttonSubtitle fs-5">Deuses</span>
+              </button>
+        </nav>
+
+    </header>
+
+    <main class="col-md-9 col-sm-12 col-12 offset-md-2 l-wrapper__content">
+        <figure class="col-12 c-banner">
+            <img src="src/assets/images/banner-main.jpg" alt="Visão da última casa do santuário" class="col-12 c-banner__imageDesk" />
+            <img src="src/assets/images/banner-main-mobile.jpg" alt="Visão do santuário" class="col-12 c-banner__image" />
+        </figure>
+        <div class="col-12 px-4 l-userInfo" role="contentinfo">
+            <figure class="l-userInfo__avatar ms-md-5">
+                <img src="src/assets/images/perfil.jpg" alt="Foto do Perfil do usuário" class="l-userInfo__avatarImage" />
+                <div class="l-userInfo__avatarBorder" role="img" aria-label="Imagem de um losangulo transparente com bordas laranjas"></div>
+            </figure>
+            <hgroup class="l-userInfo__saluteAndName">
+                <h2 class="l-userInfo__salute">Welcome</h2>
+                <h3 class="l-userInfo__name">anonymous</h3>
+            </hgroup>
+            <q class="l-userInfo__phrase">Apenas os perdedores acham que os sonhos são impossíveis.</q>
+        </div>
+        <div class="col-12 px-4 py-5 l-tablon" role="contentinfo">
+            <div role="img" class="col-12 l-tablon__background"></div>
+            <div class="col-12 col-sm-12 col-xl-3 l-tablon__contentLeft" role="contentinfo">
+                <section class="col-12 p-3 l-tablon__contentHistory">
+                    <h4 class="l-tablon__titleElement">Século XVI</h4>
+                    <p class="l-tablon__historyContent pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit, amet quidem omnis illo quae. Est temporibus eveniet eos nihil suscipit placeat hic perspiciatis sed praesentium iure? Recusandae, consectetur sint.</p>
+                </section>
+                <button type="button" class="btn mt-5 mb-4 l-btn__awards"><i class="cp cp-pencils"></i>Awards</button>
+                <button class="btn mt-3 py-2 px-3 l-btn__tablon is_selected l-btn__tablonMain" type="button">Principal</button>
+                <button class="btn mt-3 py-2 px-3 l-btn__tablon l-btn__tablonStaff" type="button">Staff</button>
+                <button class="btn mt-3 py-2 px-3 l-btn__tablon l-btn__tablonExtraInformation" type="button">Informações Extras</button>
+            </div>
+            <div class="col-12 col-sm-12 ps-xl-2 col-xl-9 l-tablon__contentRight" role="contentinfo">
+                <div class="col-12 px-0 px-x  l-3 l-tablon__mainContent is_visible" role="contentinfo">
+                    <section class="col-12 px-2 py-3 l-mainContent__lastPosts">
+                        <h4 class="l-tablon__titleElement">Últimos Posts <button type="button" class="btn c-btn__toogleSection c-section__lastPosts"><i class="cp cp-plus fs-2"></i></button></h4>
+                        <div class="l-lastPosts__content" role="contentinfo">
+                            <ul class="l-lastPosts__list px-2 py-2">
+                            </ul>
+                        </div>
+                    </section>
+                    <ul class="col-12 l-mainContent__miniMenu py-3 px-2 m-0">
+                        <li class="l-miniMenu__item">
+                            <a href="#" class="col-12 l-miniMenu__link">
+                                <figure class="l-miniMenu__contentImage l-miniMenu__rules">
+                                    <img src="src/assets/images/bg-minimenu__rules.jpg" alt="Rosto de Shion com Sapuris" class="l-miniMenu__image">
+                                    <i class="cp cp-rulers"></i>
+                                </figure>
+                                <p class="l-miniMenu__text m-0">Regras</p>
+                            </a>
+                        </li>
+                        <li class="l-miniMenu__item u-flex__end">
+                            <a href="#" class="col-12 l-miniMenu__link">
+                                <figure class="l-miniMenu__contentImage l-miniMenu__standards">
+                                    <img src="src/assets/images/bg-minimenu__geral.jpg" alt="Rosto de Shion com Sapuris" class="l-miniMenu__image">
+                                    <i class="cp cp-pencil-and-ruler"></i>
+                                </figure>
+                                <p class="l-miniMenu__text m-0">Normas</p>
+                            </a>
+                        </li>
+                        <li class="l-miniMenu__item">
+                            <a href="#" class="col-12 l-miniMenu__link">
+                                <figure class="l-miniMenu__contentImage l-miniMenu__plot">
+                                    <img src="src/assets/images/bg-minimenu__trama.jpg" alt="Rosto de Shion com Sapuris" class="l-miniMenu__image">
+                                    <i class="cp cp-feather"></i>
+                                </figure>
+                                <p class="l-miniMenu__text m-0">O Despertar</p>
+                            </a>
+                        </li>
+                        <li class="l-miniMenu__item u-flex__end">
+                            <a href="#" class="col-12 l-miniMenu__link">
+                                <figure class="l-miniMenu__contentImage l-miniMenu__begin">
+                                    <img src="src/assets/images/bg-minimenu__primeirosPassos.jpg" alt="Rosto de Shion com Sapuris" class="l-miniMenu__image">
+                                    <i class="cp cp-stars"></i>
+                                </figure>
+                                <p class="l-miniMenu__text m-0">Primeiros Passos</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <section class="col-12 l-mainContent__updateNotify ps-3 pe-2 py-3">
+                        <h4 class="l-tablon__titleElement">Atualização</h4>
+                        <div class="l-updateNotify__content" role="contentinfo">
+                            <p class="l-updateNotify__text py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro incidunt illo voluptatibus enim, odio ut nemo? Aliquid, distinctio maxime sed magnam facere iste, tenetur explicabo inventore sint commodi cumque suscipit? Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Laborum, consequatur debitis. Optio rerum voluptates aspernatur dolorem earum ea, inventore mollitia, magni doloremque aliquam veniam voluptatibus. Quidem, modi eum. Fugiat,
+                                eos.
+                            </p>
+                        </div>
+                    </section>
+                    <a href="#" class="col-12 p-2 l-mainContent__globalPlot">
+                        <h3 class="l-globalPlot__title u-heading__third fs-2 fw-bold">TRAMA <i class="cp cp-star"></i></h3>
+                        <h2 class="l-globalPlot__title u-heading__second fs-1 fw-bold">GLOBAL</h2>
+                    </a>
+                </div>
+                <div class="col-12 px-0 px-xl-3 l-tablon__staff" role="contentinfo">
+                    <div class="l-staff__info px-2 py-3" role="contentinfo">
+                        <section class="l-staff__infoContent">
+                            <i class="cp cp-sheriff l-staff__imageInfo"></i>
+                            <h4 class="l-tablon__titleElement">STAFF</h4>
+                            <p class="t-staff__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta nihil sed cupiditate temporibus consequatur ullam. Harum ad dolore odit placeat molestias laborum ducimus atque? Minus nulla iste deleniti consequatur ducimus.</p>
+                        </section>
+                        <ul class="l-staff__socialMediaList col-12">
+                            <li class="l-staff__socialMedia">
+                                <a href="#" class="text-light">
+                                    <i class="cp cp-tumblr"></i>
+                                </a>
+                            </li>
+                            <li class="l-staff__socialMedia">
+                                <a href="#" class="text-light">
+                                    <i class="cp cp-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="l-staff__list px-0">
+                        <li class="l-staff__listItem ps-2">
+                            <a href="#" class="l-staff__link">
+                                <figure class="l-staff__contentImage">
+                                    <img src="src/assets/images/adm01.jpg" alt="Imagem do Perfil do Administrador" class="l-staff__imageUser" />
+                                    <figcaption class="l-staff__descriptionAdmin">
+                                        <div role="img" class="l-staff__iconContent">
+                                            <i class="cp cp-clover"></i>
+                                        </div>
+                                        <p class="l-staff__name">ADMIN</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="l-staff__listItem ps-2">
+                            <a href="#" class="l-staff__link">
+                                <figure class="l-staff__contentImage">
+                                    <img src="src/assets/images/adm02.jpg" alt="Imagem do Perfil do Administrador" class="l-staff__imageUser" />
+                                    <figcaption class="l-staff__descriptionAdmin">
+                                        <div role="img" class="l-staff__iconContent">
+                                            <i class="cp cp-seal"></i>
+                                        </div>
+                                        <p class="l-staff__name">ADMIN</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="l-staff__listItem ps-2">
+                            <a href="#" class="l-staff__link">
+                                <figure class="l-staff__contentImage">
+                                    <img src="src/assets/images/adm03.jpg" alt="Imagem do Perfil do Administrador" class="l-staff__imageUser" />
+                                    <figcaption class="l-staff__descriptionAdmin">
+                                        <div role="img" class="l-staff__iconContent">
+                                            <i class="cp cp-skull"></i>
+                                        </div>
+                                        <p class="l-staff__name">ADMIN</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="l-staff__listItem ps-2">
+                            <a href="#" class="l-staff__link">
+                                <figure class="l-staff__contentImage">
+                                    <img src="src/assets/images/adm04.jpg" alt="Imagem do Perfil do Administrador" class="l-staff__imageUser" />
+                                    <figcaption class="l-staff__descriptionAdmin">
+                                        <div role="img" class="l-staff__iconContent">
+                                            <i class="cp cp-sheep"></i>
+                                        </div>
+                                        <p class="l-staff__name">ADMIN</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 px-0 px-xxl-3 l-tablon__extraInfos" role="contentinfo">
+
+                    <section class="col-12 l-extraInfo__announcement">
+                        <figcaption class="l-announcement__imageContent mb-2 mb-md-0">
+                            <img src="src/assets/images/banner-announcement.jpg" alt="Banner para os anúncios" class="l-announcement__image" />
+                        </figcaption>
+                        <h4 class="l-tablon__titleElement ms-2 mt-md-2">Anúncio</h4>
+                        <p class="l-announcement__text px-2 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero dignissimos at quos accusantium, dolorum nihil, eligendi, ad vitae aspernatur quasi? Distinctio, in accusamus beatae ipsam molestias asperiores iure exercitationem!
+                            <a href="#" class="l-announcement__textLink">Ver mais</a></p>
+                    </section>
+                    <ul class="col-12 l-extraInfo__newUsers mt-2 px-2 py-3">
+                        <li class="l-newUser__item u-newUser__itemSpecial">
+                            <h4 class="l-tablon__titleElement">Novos Usuários</h4><button type="button" class="btn c-btn__closeNewUser"><i class="cp cp-plus fs-2"></i></button>
+                        </li>
+                        <li class="l-newUser__item mb-1 mb-md-0">
+                            <a href="#" class="l-newUser__itemLink p-2 pt-md-0 pb-md-0 ps-md-0">
+                                <figure class="l-newUser__contentImage">
+                                    <img src="src/assets/images/usernew__01.jpg" alt="Imagem do usuário" class="l-newUser__image">
+                                    <figcaption class="l-newUser__nameUser">Nome do Usuário</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="l-newUser__item mb-1 mb-md-0">
+                            <a href="#" class="l-newUser__itemLink p-2 pt-md-0 pb-md-0 ps-md-0">
+                                <figure class="l-newUser__contentImage">
+                                    <img src="src/assets/images/usernew__02.jpg" alt="Imagem do usuário" class="l-newUser__image">
+                                    <figcaption class="l-newUser__nameUser">Nome do Usuário</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="l-newUser__item mb-1 mb-md-0">
+                            <a href="#" class="l-newUser__itemLink p-2 pt-md-0 pb-md-0 ps-md-0">
+                                <figure class="l-newUser__contentImage">
+                                    <img src="src/assets/images/usernew__03.jpg" alt="Imagem do usuário" class="l-newUser__image">
+                                    <figcaption class="l-newUser__nameUser">Nome do Usuário</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="l-newUser__item mb-1 mb-md-0">
+                            <a href="#" class="l-newUser__itemLink p-2 pt-md-0 pb-md-0 ps-md-0">
+                                <figure class="l-newUser__contentImage">
+                                    <img src="src/assets/images/usernew__04.jpg" alt="Imagem do usuário" class="l-newUser__image">
+                                    <figcaption class="l-newUser__nameUser">Nome do Usuário</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="l-newUser__item mb-1 mb-md-0">
+                            <a href="#" class="l-newUser__itemLink p-2 pt-md-0 pb-md-0 ps-md-0">
+                                <figure class="l-newUser__contentImage">
+                                    <img src="src/assets/images/usernew__05.jpg" alt="Imagem do usuário" class="l-newUser__image">
+                                    <figcaption class="l-newUser__nameUser">Nome do Usuário</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="col-12 l-extraInfo__listLinks mt-2 mt-md-4 mb-md-0">
+                        <li class="l-listLinks__item mb-1 mb-md-0">
+                            <a href="#" class="l-listLinks__link p-2">Guia 01</a>
+                        </li>
+                        <li class="l-listLinks__item mb-1 mb-md-0">
+                            <a href="#" class="l-listLinks__link p-2">Guia 02</a>
+                        </li>
+                        <li class="l-listLinks__item mb-1 mb-md-0">
+                            <a href="#" class="l-listLinks__link p-2">Guia 03</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <section class="col-12 mt-2 l-weather">
+            <div class="l-weather__icons" role="contentinfo">
+                <i class="cp l-weather__main"></i>
+                <i class="cp cp-cloud l-weather__cloudIcon"></i>
+            </div>
+            <div class="col-12 l-weather__background" role="img"></div>
+            <div class="l-weather__info" role="contentinfo">
+                <h4 class="l-weather__text">22°</h4>
+                <p class="l-weather__condition"> Parcialmente nublado.</p>
+                <p class="l-weather__salution"></p>
+            </div>
+        </section>
+        <div class="col-12 mt-2 l-info__main" role="contentinfo">
+
+            <section class="col-12 mt-2 c-section__titleContent">
+                <h2 class="c-section__title">Queime o Cosmo</h2>
+                <div role="img" class="c-section__imageBackground"></div>
+            </section>
+
+            <ul class="col-12 l-infoMain__content" role="contentinfo">
+                <li class="col-12 col-lg-6 mb-4 mb-lg-0 l-infoMain__left">
+                    <div class="col-12 col-lg-10 offset-lg-1 l-infoMain__create" role="contentinfo">
+
+                        <section class="l-create__info">
+                            <h3 class="l-create__infoTitle">Junte-se aos Deuses</h3>
+                            <p class="l-create__infoContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, consequatur! Quas, facilis? Itaque unde iste praesentium eaque ut qui ratione rem, nisi error incidunt dignissimos ab officiis suscipit laborum nulla.</p>
+                        </section>
+
+                        <ul class="l-create__listLink">
+                            <li class="l-create__item">
+                                <a href="" class="l-create__link">Fazer Ficha</a>
+                            </li>
+                            <li class="l-create__item">
+                                <a href="" class="l-create__link">Atributos</a>
+                            </li>
+                        </ul>
+
+                        <img src="src/assets/images/banner-create.jpg" alt="Imagem de background" class="l-create__image" />
+
+                    </div>
+                    <section class="col-12 col-lg-10 offset-lg-1 l-infoMain__rank">
+                        <h4 class="l-rank__title"><a href="#">RANKS</a></h4>
+                        <ul class="l-rank__list">
+                            <li class="l-rank__listItem u-rank__ex" title="Deuses">EX</li>
+                            <li class="l-rank__listItem u-rank__z" title="Classe Superior Especial">Z</li>
+                            <li class="l-rank__listItem u-rank__r" title="Representantes">R</li>
+                            <li class="l-rank__listItem u-rank__ss" title="Deuses menores e Kamuis">SS</li>
+                            <li class="l-rank__listItem u-rank__u" title="Especiais Exclusios">U</li>
+                            <li class="l-rank__listItem u-rank__s" title="Classe Superior">S</li>
+                            <li class="l-rank__listItem u-rank__a" title="Classe Avançada">A</li>
+                            <li class="l-rank__listItem u-rank__x" title="Classe intermediária especial">X</li>
+                            <li class="l-rank__listItem u-rank__b" title="Classe Intermediária">B</li>
+                            <li class="l-rank__listItem u-rank__c" title="Classe baixa">C</li>
+                        </ul>
+                    </section>
+                </li>
+                <li class="col-12 col-lg-6 l-infoMain__right pe-lg-4">
+                    <figure class="l-info__writing col-12 col-lg-12 mb-2">
+                        <img src="src/assets/images/background__banner--infoRightTop.jpg" alt="Background do Dohko" class="l-info__writingImage">
+                        <div class="l-writing__info p-2" role="contentinfo">
+                            <h4 class="l-writing__title">Processos</h4>
+                            <p class="l-writing__text my-2 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis accusamus, tenetur alias atque, nesciunt dolores itaque nostrum, dicta hic facere? Fugiat id facilis maiores reprehenderit esse soluta, eveniet dignissimos!</p>
+                            <ul class="c-info__listLinks col-12">
+                                <li class="c-info__listItem mb-2 col-12 col-lg-5">
+                                    <a href="#" class="c-info__listLink p-1">Modelos</a>
+                                </li>
+                                <li class="c-info__listItem mb-2 col-12 col-lg-5">
+                                    <a href="#" class="c-info__listLink p-1">NPC</a>
+                                </li>
+                                <li class="c-info__listItem mb-2 col-12">
+                                    <a href="#" class="c-info__listLink p-1">Sinergias</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
+                    <figure class="l-info__writing col-12 col-lg-12">
+                        <img src="src/assets/images/background__banner--infoRightBottom.jpg" alt="Background do Shion Sapuris" class="l-info__writingImage">
+                        <div class="l-writing__info p-2" role="contentinfo">
+                            <h4 class="l-writing__title">Informação</h4>
+                            <p class="l-writing__text my-2 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis accusamus, tenetur alias atque, nesciunt dolores itaque nostrum, dicta hic facere? Fugiat id facilis maiores reprehenderit esse soluta, eveniet dignissimos!</p>
+                            <ul class="c-info__listLinks col-12">
+                                <li class="c-info__listItem mb-2 col-12 col-lg-5">
+                                    <a href="#" class="c-info__listLink p-1">Vestes</a>
+                                </li>
+                                <li class="c-info__listItem mb-2 col-12 col-lg-5">
+                                    <a href="#" class="c-info__listLink p-1">Sentidos</a>
+                                </li>
+                                <li class="c-info__listItem mb-2 col-12">
+                                    <a href="#" class="c-info__listLink p-1">Velocidade</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <div class="l-categories" role="contentinfo">
+
+        </div>
+        <div class="l-statistics" role="contentinfo">
+            <section class="col-12 mt-2 c-section__titleContent">
+                <h2 class="c-section__title">Estatísticas</h2>
+                <div role="img" class="c-section__imageBackground"></div>
+            </section>
+            <div class="l-statistics__content" role="contentinfo">
+                <ul class="l-statistics__forum">
+                </ul>
+                <section class="l-usersconnection col-12" role="contentinfo">
+                    <h4 class="l-usersconnection__title col-12"><i class="cp cp-plug"></i> Logados Atualmente</h4>
+                    <ul class="l-usersconnection__list">
+                    </ul>
+                </section>
+                <section class="l-usersconnection__old col-12">
+                    <h4 class="l-usersconnection__title col-12"><i class="cp cp-holly"></i> Logados Recentemente</h4>
+                    <ul class="l-usersconnection__OldList">
+                    </ul>
+                </section>
+                <section class="l-statics__rules">
+                    <a class="l-static__rulesLink" href="#">
+                        <h4 class="l-statistic__ruleTitle"><i class="cp cp-book"></i> Guias</h4>
+                    </a>
+                    <div class="l-static__rulesImage" role="img"></div>
+                </section>
+            </div>
+            <ul class="l-groups__list">
+            </ul>
+            <ul class="col-12 p-2 l-associates__list mb-0">
+            </ul>
+        </div>
+    </main>
+    <footer class="col-md-9 col-sm-12 col-12 offset-md-2 l-footer">
+
+        <header class="l-footer__header col-12">
+            <form class="l-footer__loginForm col-12" action="#">
+                <div class="form-group col-10 col-lg-4">
+                    <label for="email__account">E-mail</label>
+                    <input type="email" class="form-control" id="email__account" placeholder="Digite seu Email">
+                </div>
+                <div class="form-group col-10 col-lg-4">
+                    <label for="password__account">Senha</label>
+                    <input type="password" class="form-control" id="password__account" placeholder="Digite sua senha">
+                </div>
+                <button type="submit" class="btn l-footer__formButton mt-3 mt-lg-0 col-10 col-md-6 col-lg-2">Vestir Veste!</button>
+            </form>
+        </header>
+
+        <a href="#" class="l-footer__announcement col-12 my-2">
+            <figure class="l-footer__announcementContent col-10 col-lg-6">
+                <img src="https://fasebeta.com.br/wp-content/uploads/2019/06/53117873_2089086381173655_1632243295109251072_n-760x350.jpg" alt="Propaganda da forumeiros" class="l-footer__bannerAnnouncement col-12" />
+            </figure>
+        </a>
+
+        <nav class="l-footer__navigate col-12">
+            <ul class="l-footer__navigateList col-12">
+                <li class="l-footer__navigateItem main">
+                    <a href="#" class="l-footer__navigateLink">Inicio</a>
+                </li>
+                <ul class="l-footer__navigateList--menus">
+                    <li class="l-footer__navigateItem">
+                        <a href="#" class="l-footer__navigateLink">Forumeiros.com</a>
+                    </li>
+                    <li class="l-footer__navigateItem">
+                        <a href="#" class="l-footer__navigateLink">phpBB</a>
+                    </li>
+                    <li class="l-footer__navigateItem">
+                        <a href="#" class="l-footer__navigateLink">Ajuda</a>
+                    </li>
+                    <li class="l-footer__navigateItem">
+                        <a href="#" class="l-footer__navigateLink">Conecte-nos</a>
+                    </li>
+                    <li class="l-footer__navigateItem">
+                        <a href="#" class="l-footer__navigateLink">Pesquisar</a>
+                    </li>
+                    <li class="l-footer__navigateItem">
+                        <a href="#" class="l-footer__navigateLink">Denúnciar</a>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+        <footer class="l-footer__copy col-12">
+            <p class="l-footer__copyContent">&copy; Desenvolvido por <a class="l-footer__developer" href="#">TaleCross</a></p>
+        </footer>
+
+    </footer>
+    <a href="#" class="c-link__discord">
+        <i class="cp cp-discord"></i>
+    </a>
+    <dialog class="c-modal p-0">
+        <div class="c-modal__dialog c-modal__default" role="document">
+            <header class="c-modal__header">
+                <h3 class="c-modal__title"></h3>
+                <button type="button" class="btn c-btn__modal">X</button>
+            </header>
+            <div class="c-modal__content" role="contentinfo"></div>
+        </div>
+    </dialog>
+    <script src="src/scripts/menu.js"></script>
+    <script src="src/scripts/tablon.js"></script>
+    <script src="src/scripts/modal.js"></script>
+    <script src="src/scripts/tablon__lastPosts.js"></script>
+    <script src="src/scripts/tablon_awards.js"></script>
+    <script src="src/scripts/tablon_god.js"></script>
+    <script src="src/scripts/weather.js"></script>
+    <script src="src/scripts/categories.js"></script>
+    <script src="src/scripts/statistics.js"></script>
+    <script src="src/scripts/newUserStatistics.js"></script>
+    <script src="src/scripts/geralFunctions.js" type="module"></script>
+    <script src="src/scripts/usersConnectionOld.js" type="module"></script>
+    <script src="src/scripts/usersConnection.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="src/scripts/associate.js"></script>
+    <script src="src/scripts/groups.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/scripts/scrollreveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.c-banner__image {
+    -webkit-filter: grayscale(0.6);
+    filter: grayscale(0.6);
+}
+
+.c-banner__imageDesk {
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.c-banner__imageDesk:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.c-banner__imageDesk {
+    display: none;
+}
+
+.c-banner__image {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .c-banner__imageDesk {
+        display: block;
+    }
+    .c-banner__image {
+        display: none;
+    }
+}

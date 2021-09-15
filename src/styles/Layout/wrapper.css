@@ -1,0 +1,5 @@
+.l-wrapper__content {
+    background-color: var(--black-20);
+    min-height: 100vh;
+    height: 100%;
+}
