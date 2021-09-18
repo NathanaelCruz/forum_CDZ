@@ -1,6 +1,6 @@
 # FÓRUM CDZ
 
-![Image Thumb](https://imgur.com/78yUWst.png)
+![Image Thumb](https://imgur.com/hTnymJ4.png)
 
 Este projeto foi baseado em layouts dos Fóruns de RPG da Forumeiros, com o objetivo de treinar e aplicar as bases de HTML, CSS e Javascript.
 
