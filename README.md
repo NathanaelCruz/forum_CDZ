@@ -17,6 +17,6 @@ Este projeto foi baseado em layouts dos Fóruns de RPG da Forumeiros, com o obje
 No geral é um projeto simples, mas recomendo realizar o loading dentro de um servidor, podendo ser o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), o que foi utilizado durante o desenvolvimento deste projeto juntamente com a IDE VSCode.
 
 ## DEPLOY
-Feito o deploy na vercel, está disponivel para ver o projeto em [Forum CDZ](https://vercel.com/nathanaelcruz/forum-cdz).
+Feito o deploy na vercel, está disponivel para ver o projeto em [Forum CDZ](https://forum-cdz.vercel.app/).
 
 ### Desenvolvido em 2021 por Nathanael Cruz.
